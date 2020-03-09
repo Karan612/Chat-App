@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Join | ChatApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="/css/styles.css">
+  <script src = "particles.js"></script>
+
+  <style>
+    body {
+      padding-right: 100px;
+      background-color: darkred;
+    }
+
+    .logo img {
+      width: 120px;
+      height: 90px;
+      position: relative;
+      animation-name: example;
+      animation-duration: 7s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+      0%  {left:15px; bottom: 195px;}
+      25% {left:375px;bottom: 195px;}
+      50% {left:375px; bottom:-195px;}
+      75% {left:15px; bottom: -195px;}
+      100% {left:15px; bottom: 195px;}
+}
+  </style>
 </head>
 
 <body class="centered-form">
+  <div class='logo'>
+    <img src='./img/logo.png'>
+  </div>
   <div class="centered-form__form">
     <form action="/chat.html">
       <div class="form-field">
-        <h3> ZTeam Chat<h3>
+        <h3>GBC Chat<h3>
       </div>
       <div class="form-field">
-        <label>Display name</label>
+        <label>User Name</label>
         <input type="text" name="Name" autofocus/>
       </div>
       <div class="form-field">
-        <label>Room name</label>
+        <label>Room Name</label>
         <input type="text" name="Room"/>
       </div>
       <div class="form-field">

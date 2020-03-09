@@ -3,12 +3,16 @@
 <head>
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>ZTeam Chat - Open source chat </title>
+    <title>GBC Chat - Open source chat </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-        .chat
-{
+    
+    .container {
+        margin-top: 5%;
+    }
+    .chat {
+        
     list-style: none;
     margin: 0;
     padding: 0;
@@ -31,6 +35,9 @@
     margin-right: 60px;
 }
 
+.btn {
+    margin-top: -3px;
+}
 
 .chat li .chat-body p
 {
@@ -66,6 +73,9 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #555;
 }
+body {
+      background-color: darkred;
+    }
 
     </style>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -77,27 +87,14 @@
         <div class="col-lg-12">
             <div class="panel panel-primary" id="toby">
                 <div class="panel-heading">
-                    <span class="glyphicon glyphicon-comment"> </span> <span style=" font-size: 44; font-family: all; "> Zteam Chat Web app</span> 
+                    <span class="glyphicon glyphicon-comment"> </span> <span style=" font-size: 44; font-family: all; "> GBC Chat Web app</span> 
                     <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-chevron-down"></span>
-                        </button>
-                        <ul class="dropdown-menu slidedown">
-                            <li><a href="#"><span class="glyphicon glyphicon-refresh">
-                            </span>Refresh</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-ok-sign">
-                            </span>Available</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-remove">
-                            </span>Busy</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-time"></span>
-                                Away</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"<span class="glyphicon glyphicon-off"></span>
-                                Sign Out</a></li>
-                        </ul>
-                    </div>
+                        <a href = "index.html" type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-log-out"></span> Log out
+                        </a>
+                      </div>
                 </div>
-                <div class="panel-body" id="testit" >
+                <div class="panel-body" id="testit">
                     <ul class="chat" id="messages">
                    
                      
@@ -106,15 +103,14 @@
                     </ul>
                 </div>
                 <div class="panel-footer">
-                    <form id="message-form">                    <div class="input-group">
-                        <input  id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                        <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm"  type="submit" id="btn-chat">
-                                Send</button>
-                        </span>
-                    </div>
+                    <form id="message-form">                    
+                        <div class="input-group">
+                            <input  id="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                            <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm"  type="submit" id="btn-chat">Send</button>
+                            </span>
+                        </div>
                     </form>
-
                 </div>
             </div>
         </div>

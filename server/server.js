@@ -1,4 +1,3 @@
-/////////////////////////////////
 //Attach dependancies
 const path = require('path');
 const express = require('express');
@@ -27,7 +26,7 @@ io.on('connection', (socket) => {
         if (user) {
             
             io.to(user.room).emit('updateUsers', users.getList(user.room));
-            io.to(user.room).emit('newMessage', generateMessage('Admin', `${user.name} has beed leave the chat`));
+            io.to(user.room).emit('newMessage', generateMessage('Admin', `${user.name} has left the chat`));
         }
 
     });
@@ -47,9 +46,9 @@ io.on('connection', (socket) => {
 
             io.to(params.Room).emit('updateUsers', users.getList(params.Room))
 
-            socket.emit('newMessage', generateMessage('Admin', 'Welcome to ZTeam Chat App'));
+            socket.emit('newMessage', generateMessage('Admin', 'Welcome to GBC Chat App'));
 
-            socket.broadcast.to(params.Room).emit('newMessage', generateMessage('Admin', ` ${params.Name} has been joined`));
+            socket.broadcast.to(params.Room).emit('newMessage', generateMessage('Admin', ` ${params.Name} has joined`));
 
             callback();
         }
