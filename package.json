@@ -1,33 +1,21 @@
 {
   "name": "gbc-chat",
-  "version": "1.3.4",
-  "description": "a real time chat with socket io and express ",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
-    "test": "npm install",
-    "test-watch": "nodemon --exec 'npm test'"
-  },
-  "engines": {
-    "node": "13.1.0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/Karan612/Chat-App.git"
   },
-  "keywords": [
-    "node-chat",
-    "express",
-    "socketio",
-    "real time chat"
-  ],
-  "author": "Karan, Kashyap, Dharam",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.15.3",
-    "socket.io": "^2.0.1"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karan612/Chat-App/issues"
   },
-  "devDependencies": {
-    "expect": "^1.20.2",
-    "mocha": "^7.1.0"
-  }
+  "homepage": "https://github.com/Karan612/Chat-App#readme"
 }
