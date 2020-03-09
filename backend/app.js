@@ -26,8 +26,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'dist/zteam-chat')));
-app.use('/', express.static(path.join(__dirname, 'dist/zteam-chat')));
+app.use(express.static(path.join(__dirname, 'dist/gbc-chat')));
+app.use('/', express.static(path.join(__dirname, 'dist/gbc-chat')));
 app.use('/api', [historyRoute,eventRoute])
 
 // Create port
