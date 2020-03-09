@@ -6,7 +6,6 @@
     "scripts": {
         "start": "node index.js",
         "test": "mocha server/**/*.test.js",
-        "postinstall": "npx build --output-path dist",
         "test-watch": "nodemon --exec 'npm test'"
     },
     "engines": {
