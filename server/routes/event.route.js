@@ -3,7 +3,7 @@ const app = express();
 const eventRoute = express.Router();
 
 // Event model
-let Event = require('../model/Event');
+let Event = require('../model/event');
 
 // Add Event
 eventRoute.route('/add-event').post((req, res, next) => {

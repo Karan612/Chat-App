@@ -91,8 +91,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'dist/gbc-chat')));
-app.use('/', express.static(path.join(__dirname, 'dist/gbc-chat')));
+app.use(express.static(path.join(__dirname)));
+app.use('/', express.static(path.join(__dirname)));
 app.use('/api', [historyRoute,eventRoute])
 
 // Find 404 and hand over to error handler
