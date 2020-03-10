@@ -11,4 +11,4 @@ var Event = new mongoose.Schema({
   }
 });
 var Event = mongoose.model('Event', Event);
-module.exports = History;
+module.exports = Event;
